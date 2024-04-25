@@ -1,0 +1,11 @@
+framework module ZeroMQ {
+  umbrella header "ZeroMQ.h"
+  export *
+
+  module * { export * }
+}
+
+module ZeroMQ.Swift {
+  header "ZeroMQ-Swift.h"
+  requires objc
+}

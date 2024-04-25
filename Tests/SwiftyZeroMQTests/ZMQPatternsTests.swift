@@ -1,14 +1,14 @@
 //
 //  ZMQPatternsTests.swift
-//  EFSwiftyZeroMQ
+//  SwiftyZeroMQ
 //
 //  Created by Thomas Bibby on 28/06/2017.
 //  Copyright © 2017 azawawi. All rights reserved.
 //
 
 import XCTest
-import SwiftyZeroMQ.zmq
-@testable import EFSwiftyZeroMQ
+import ZeroMQ.zmq
+@testable import SwiftyZeroMQ
 
 class ZMQPatternsTests: XCTestCase {
     //    Previously generated public and private keys for server
@@ -26,15 +26,15 @@ class ZMQPatternsTests: XCTestCase {
         super.tearDown()
     }
 //    func testSecurePushPullSocket() throws {
-//        if(!EFSwiftyZeroMQ.has(.curve)) {
-//            XCTFail("Cannot test CURVE as EFSwiftyZeroMQ does not have CURVE enabled")
+//        if(!SwiftyZeroMQ.has(.curve)) {
+//            XCTFail("Cannot test CURVE as SwiftyZeroMQ does not have CURVE enabled")
 //        }
 //        //we will compare these two in our assert at the end
 //        let messageToSend = "YORE MA"
 //        var messageReceived = ""
 //        
 //        
-//        let context = try EFSwiftyZeroMQ.Context()
+//        let context = try SwiftyZeroMQ.Context()
 //        let subSocket = try context.socket(.pull)
 //        //    Generated keys for the client
 //        let (generated_public_key, generated_private_key) = try subSocket.curveKeyPair()
@@ -61,7 +61,7 @@ class ZMQPatternsTests: XCTestCase {
         //    we will compare these in our XCTAssert
         let messageToSend = "YORE MA"
         var messageReceived = ""
-        let context = try EFSwiftyZeroMQ.Context()
+        let context = try SwiftyZeroMQ.Context()
         
         //do sub socket first
         let subSocket = try context.socket(.subscribe)
@@ -92,7 +92,7 @@ class ZMQPatternsTests: XCTestCase {
 //        
 //        
 //        
-//        let context = try EFSwiftyZeroMQ.Context()
+//        let context = try SwiftyZeroMQ.Context()
 //        
 //        //do sub socket first
 //        let subSocket = try context.socket(.subscribe)
@@ -129,7 +129,7 @@ class ZMQPatternsTests: XCTestCase {
         var messageReceived = ""
         
         //context
-        let context = try EFSwiftyZeroMQ.Context()
+        let context = try SwiftyZeroMQ.Context()
         //router
         let routerSocket = try context.socket(.router)
         try routerSocket.bind(endpoint)
@@ -152,8 +152,8 @@ class ZMQPatternsTests: XCTestCase {
     }
     
 //    public func testSecureDealerRouter() throws {
-//        if(!EFSwiftyZeroMQ.has(.curve)) {
-//            XCTFail("Cannot test CURVE as EFSwiftyZeroMQ does not have CURVE enabled")
+//        if(!SwiftyZeroMQ.has(.curve)) {
+//            XCTFail("Cannot test CURVE as SwiftyZeroMQ does not have CURVE enabled")
 //        }
 //        let messageToSend = "O HAI"
 //        let identifierToSend = "EES ME"
@@ -162,7 +162,7 @@ class ZMQPatternsTests: XCTestCase {
 //        var messageReceived = ""
 //        
 //        //context
-//        let context = try EFSwiftyZeroMQ.Context()
+//        let context = try SwiftyZeroMQ.Context()
 //        //router
 //        let routerSocket = try context.socket(.router)
 //        //set key

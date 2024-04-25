@@ -4,23 +4,23 @@
 import PackageDescription
 
 let package = Package(
-    name: "EFSwiftyZeroMQ",
+    name: "SwiftyZeroMQ",
     platforms: [
         .iOS(.v16)
     ],
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
-            name: "EFSwiftyZeroMQ",
-            targets: ["EFSwiftyZeroMQ"]),
+            name: "SwiftyZeroMQ",
+            targets: ["SwiftyZeroMQ"]),
     ],
     targets: [
-        .binaryTarget(name: "SwiftyZeroMQ", path: "SwiftyZeroMQ.xcframework.zip"),
+        .binaryTarget(name: "ZeroMQ", path: "ZeroMQ.xcframework.zip"),
         .target(
-            name: "EFSwiftyZeroMQ",
-            dependencies: ["SwiftyZeroMQ"]),
+            name: "SwiftyZeroMQ",
+            dependencies: ["ZeroMQ"]),
         .testTarget(
             name: "SwiftyZeroMQTests",
-            dependencies: ["EFSwiftyZeroMQ", "SwiftyZeroMQ"]),
+            dependencies: ["SwiftyZeroMQ", "ZeroMQ"]),
     ]
 )
