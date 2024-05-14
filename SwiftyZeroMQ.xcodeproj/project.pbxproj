@@ -41,9 +41,6 @@
 		0408D7EB1DB93C710038830A /* zmq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zmq.h; sourceTree = "<group>"; };
 		042181381DD89E3100F8922C /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		042AEE981DDB09FB0019D27B /* libzmq-ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libzmq-ios.a"; path = "Libraries/libzmq-ios.a"; sourceTree = "<group>"; };
-		042AEE991DDB09FB0019D27B /* libzmq-macos.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libzmq-macos.a"; path = "Libraries/libzmq-macos.a"; sourceTree = "<group>"; };
-		042AEE9A1DDB09FB0019D27B /* libzmq-tvos.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libzmq-tvos.a"; path = "Libraries/libzmq-tvos.a"; sourceTree = "<group>"; };
-		042AEE9B1DDB09FB0019D27B /* libzmq-watchos.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libzmq-watchos.a"; path = "Libraries/libzmq-watchos.a"; sourceTree = "<group>"; };
 		042AEEA31DDB0B090019D27B /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/lib/libc++.tbd"; sourceTree = DEVELOPER_DIR; };
 		0442A8CC1DC21BEF00F82B75 /* Manual.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = Manual.md; path = Documentation/Manual.md; sourceTree = "<group>"; };
 		0442A8CE1DC224B000F82B75 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
@@ -97,9 +94,6 @@
 			children = (
 				4013C0492BDC5D9700AF52B9 /* eric */,
 				042AEE981DDB09FB0019D27B /* libzmq-ios.a */,
-				042AEE991DDB09FB0019D27B /* libzmq-macos.a */,
-				042AEE9A1DDB09FB0019D27B /* libzmq-tvos.a */,
-				042AEE9B1DDB09FB0019D27B /* libzmq-watchos.a */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
