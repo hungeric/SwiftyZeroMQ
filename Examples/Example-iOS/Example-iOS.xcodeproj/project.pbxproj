@@ -17,41 +17,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		040DC8F31DE3112300BED068 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 04F8F5941DC5E7CB0018A3D5 /* SwiftyZeroMQ.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 04AA85E01DC9EF0E0026AE5E;
-			remoteInfo = "SwiftyZeroMQ-macOS";
-		};
-		040DC8F51DE3112300BED068 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 04F8F5941DC5E7CB0018A3D5 /* SwiftyZeroMQ.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 04AA85E81DC9EF0E0026AE5E;
-			remoteInfo = "SwiftyZeroMQ-macOSTests";
-		};
-		040DC8F71DE3112300BED068 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 04F8F5941DC5E7CB0018A3D5 /* SwiftyZeroMQ.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 04AA857F1DC9E5770026AE5E;
-			remoteInfo = "SwiftyZeroMQ-tvOS";
-		};
-		040DC8F91DE3112300BED068 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 04F8F5941DC5E7CB0018A3D5 /* SwiftyZeroMQ.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 04AA85871DC9E5780026AE5E;
-			remoteInfo = "SwiftyZeroMQ-tvOSTests";
-		};
-		040DC8FB1DE3112300BED068 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 04F8F5941DC5E7CB0018A3D5 /* SwiftyZeroMQ.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 04AA85651DC9E1390026AE5E;
-			remoteInfo = "SwiftyZeroMQ-watchOS";
-		};
 		04DC48DF1DC5E8EE00939C56 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 04F8F5941DC5E7CB0018A3D5 /* SwiftyZeroMQ.xcodeproj */;
@@ -147,11 +112,6 @@
 			children = (
 				04F8F59A1DC5E7CB0018A3D5 /* SwiftyZeroMQ.framework */,
 				04F8F59C1DC5E7CB0018A3D5 /* SwiftyZeroMQ-iOS Tests.xctest */,
-				040DC8F41DE3112300BED068 /* SwiftyZeroMQ.framework */,
-				040DC8F61DE3112300BED068 /* SwiftyZeroMQ-macOSTests.xctest */,
-				040DC8F81DE3112300BED068 /* SwiftyZeroMQ.framework */,
-				040DC8FA1DE3112300BED068 /* SwiftyZeroMQ-tvOSTests.xctest */,
-				040DC8FC1DE3112300BED068 /* SwiftyZeroMQ.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -199,6 +159,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -219,41 +180,6 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		040DC8F41DE3112300BED068 /* SwiftyZeroMQ.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = SwiftyZeroMQ.framework;
-			remoteRef = 040DC8F31DE3112300BED068 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		040DC8F61DE3112300BED068 /* SwiftyZeroMQ-macOSTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "SwiftyZeroMQ-macOSTests.xctest";
-			remoteRef = 040DC8F51DE3112300BED068 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		040DC8F81DE3112300BED068 /* SwiftyZeroMQ.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = SwiftyZeroMQ.framework;
-			remoteRef = 040DC8F71DE3112300BED068 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		040DC8FA1DE3112300BED068 /* SwiftyZeroMQ-tvOSTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "SwiftyZeroMQ-tvOSTests.xctest";
-			remoteRef = 040DC8F91DE3112300BED068 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		040DC8FC1DE3112300BED068 /* SwiftyZeroMQ.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = SwiftyZeroMQ.framework;
-			remoteRef = 040DC8FB1DE3112300BED068 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		04F8F59A1DC5E7CB0018A3D5 /* SwiftyZeroMQ.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
@@ -370,6 +296,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -413,6 +340,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -424,10 +352,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Example-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.azawawi.Example-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -437,10 +366,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Example-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.azawawi.Example-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
