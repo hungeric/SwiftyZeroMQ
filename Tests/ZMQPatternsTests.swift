@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import SwiftyZeroMQ
+@testable import ZeroMQ
 
 class ZMQPatternsTests: XCTestCase {
     //    Previously generated public and private keys for server
