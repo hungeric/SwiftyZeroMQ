@@ -11,7 +11,6 @@
 		042181391DD89E3100F8922C /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 042181381DD89E3100F8922C /* libc++.tbd */; };
 		042AEE9C1DDB09FB0019D27B /* libzmq-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 042AEE981DDB09FB0019D27B /* libzmq-ios.a */; };
 		0461FA101DC0CC82009F877A /* ZeroMQError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0461FA0F1DC0CC82009F877A /* ZeroMQError.swift */; };
-		047B52551DB7ADF500F2F202 /* SwiftyZeroMQ.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 047B52541DB7ADF500F2F202 /* SwiftyZeroMQ.podspec */; };
 		04A64D401DD0759F00FF6270 /* PollerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A64D3C1DD06E2900FF6270 /* PollerTests.swift */; };
 		04BD1F761DB64E7500E285A4 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 04BD1F741DB64E7500E285A4 /* LICENSE */; };
 		04D4EAE61E22401A00ECC2E9 /* SocketOptionsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D4EAE41E223EB000ECC2E9 /* SocketOptionsTest.swift */; };
@@ -41,14 +40,10 @@
 		0408D7EB1DB93C710038830A /* zmq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zmq.h; sourceTree = "<group>"; };
 		042181381DD89E3100F8922C /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		042AEE981DDB09FB0019D27B /* libzmq-ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libzmq-ios.a"; path = "Libraries/libzmq-ios.a"; sourceTree = "<group>"; };
-		042AEEA31DDB0B090019D27B /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/lib/libc++.tbd"; sourceTree = DEVELOPER_DIR; };
 		0442A8CC1DC21BEF00F82B75 /* Manual.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = Manual.md; path = Documentation/Manual.md; sourceTree = "<group>"; };
 		0442A8CE1DC224B000F82B75 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
 		0461FA0F1DC0CC82009F877A /* ZeroMQError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZeroMQError.swift; sourceTree = "<group>"; };
-		047B52541DB7ADF500F2F202 /* SwiftyZeroMQ.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SwiftyZeroMQ.podspec; sourceTree = "<group>"; };
 		04A64D3C1DD06E2900FF6270 /* PollerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PollerTests.swift; sourceTree = "<group>"; };
-		04AA85781DC9E3300026AE5E /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "Platforms/WatchOS.platform/Developer/SDKs/WatchOS3.0.sdk/usr/lib/libc++.tbd"; sourceTree = DEVELOPER_DIR; };
-		04AA85A01DC9E69D0026AE5E /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS10.0.sdk/usr/lib/libc++.tbd"; sourceTree = DEVELOPER_DIR; };
 		04BD1F741DB64E7500E285A4 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		04BD1F751DB64E7500E285A4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		04D4EAE41E223EB000ECC2E9 /* SocketOptionsTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketOptionsTest.swift; sourceTree = "<group>"; };
@@ -118,7 +113,6 @@
 				0442A8CE1DC224B000F82B75 /* CHANGELOG.md */,
 				04BD1F741DB64E7500E285A4 /* LICENSE */,
 				04BD1F751DB64E7500E285A4 /* README.md */,
-				047B52541DB7ADF500F2F202 /* SwiftyZeroMQ.podspec */,
 			);
 			sourceTree = "<group>";
 		};
@@ -163,10 +157,7 @@
 		04D84E601DB63C0D00AD9652 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				042AEEA31DDB0B090019D27B /* libc++.tbd */,
 				042181381DD89E3100F8922C /* libc++.tbd */,
-				04AA85A01DC9E69D0026AE5E /* libc++.tbd */,
-				04AA85781DC9E3300026AE5E /* libc++.tbd */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -266,7 +257,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				047B52551DB7ADF500F2F202 /* SwiftyZeroMQ.podspec in Resources */,
 				04BD1F761DB64E7500E285A4 /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
