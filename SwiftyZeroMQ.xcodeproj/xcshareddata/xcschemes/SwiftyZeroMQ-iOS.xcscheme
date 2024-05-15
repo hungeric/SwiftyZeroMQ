@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "04D84E321DB637E800AD9652"
-               BuildableName = "SwiftyZeroMQ.framework"
+               BuildableName = "ZeroMQ.framework"
                BlueprintName = "SwiftyZeroMQ-iOS"
                ReferencedContainer = "container:SwiftyZeroMQ.xcodeproj">
             </BuildableReference>
@@ -31,7 +31,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "04D84E321DB637E800AD9652"
-            BuildableName = "SwiftyZeroMQ.framework"
+            BuildableName = "ZeroMQ.framework"
             BlueprintName = "SwiftyZeroMQ-iOS"
             ReferencedContainer = "container:SwiftyZeroMQ.xcodeproj">
          </BuildableReference>
@@ -63,7 +63,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "04D84E321DB637E800AD9652"
-            BuildableName = "SwiftyZeroMQ.framework"
+            BuildableName = "ZeroMQ.framework"
             BlueprintName = "SwiftyZeroMQ-iOS"
             ReferencedContainer = "container:SwiftyZeroMQ.xcodeproj">
          </BuildableReference>
@@ -79,7 +79,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "04D84E321DB637E800AD9652"
-            BuildableName = "SwiftyZeroMQ.framework"
+            BuildableName = "ZeroMQ.framework"
             BlueprintName = "SwiftyZeroMQ-iOS"
             ReferencedContainer = "container:SwiftyZeroMQ.xcodeproj">
          </BuildableReference>
