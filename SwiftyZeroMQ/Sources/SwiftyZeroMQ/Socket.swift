@@ -7,6 +7,8 @@
 
 import Foundation
 
+import ZeroMQ
+
 extension SwiftyZeroMQ {
 
     /**

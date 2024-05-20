@@ -5,6 +5,7 @@
 // Please see the accompanying LICENSE file for the full text of the license.
 //
 
+import ZeroMQ
 
 /**
     Utility functions are provided here such as version, capability and proxy

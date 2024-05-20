@@ -21,6 +21,7 @@ class ViewController: UIViewController {
         versionTextView.text =
         "SwiftyZeroMQ version is \(frameworkVersion)\n" +
             "ZeroMQ library version is \(version)"
+        ZeroMQ.sockaddr_storage()
     }
 
     override func didReceiveMemoryWarning() {
