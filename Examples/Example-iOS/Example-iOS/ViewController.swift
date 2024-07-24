@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import SwiftyZeroMQ
+import ZeroMQ
 
 class ViewController: UIViewController {
 
@@ -16,11 +16,21 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
         // Show version information
-        let frameworkVersion = SwiftyZeroMQ.frameworkVersion
-        let version = SwiftyZeroMQ.version.versionString
+        let frameworkVersion = "0"
+        let version = version.versionString
         versionTextView.text =
         "SwiftyZeroMQ version is \(frameworkVersion)\n" +
             "ZeroMQ library version is \(version)"
+    }
+    
+    var version : (major: Int, minor: Int, patch: Int, versionString: String) {
+        var major: Int32 = 0
+        var minor: Int32 = 0
+        var patch: Int32 = 0
+        zmq_version(&major, &minor, &patch)
+        let versionString = "\(major).\(minor).\(patch)"
+
+        return ( Int(major), Int(minor), Int(patch), versionString)
     }
 
     override func didReceiveMemoryWarning() {
